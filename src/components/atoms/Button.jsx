@@ -4,7 +4,7 @@ export default function Button({ color, children }) {
   return (
     <button
       onClick={console.log("Hola, mundo")}
-      className={`bg-${color}-600 text-center p-2.5 border-0 rounded-3xl`}
+      className={`self-center w-auto bg-${color}-600 hover:bg-blue-600 text-center p-2.5 border-0 cursor-pointer rounded-2xl shadow`}
     >
       {" "}
       {children}
