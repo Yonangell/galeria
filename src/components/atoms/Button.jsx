@@ -1,13 +1,11 @@
 import "@/globals.css";
 
-export default function Button({ color, children }) {
+ export default function Button({ className, onClick, children }) {
   return (
-    <button
-      onClick={console.log("Hola, mundo")}
-      className={`self-center w-auto bg-${color}-600 hover:bg-blue-600 text-center p-2.5 border-0 cursor-pointer rounded-2xl shadow`}
-    >
-      {" "}
+    <button className={className} onClick={onClick}>
       {children}
     </button>
-  );
+  )
 }
+
+//export default Button;
