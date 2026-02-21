@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function ImageItem({ id, src, alt, author, width = 400, height = 300 }) {
+export default function ImageItem({ src, alt, author, width = 400, height = 300 }) {
   return (
-    <div className="border rounded-2xl overflow-hidden mt-4">
+    <div className="border rounded-2xl overflow-hidden shadow-lg mt-4">
       <Image
         src={src}
         alt={alt}
